@@ -1,0 +1,79 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Contact | Nga Khant {% endblock title %} </title>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center my-3">
+            Contact Me
+        </h2>
+        <div class="row g-2">
+            <div class="col-12 col-md-6">
+                <div class="card m-2 p-1 shadow mb-4">
+                  <div class="card-body">
+                    <h3 class="card-title mb-3">Contact Informations</h3>
+                    <h5 class="text-center mt-5">Call Us On</h5>
+                    <h6 class="text-center" style="font-style: italic; font-family:sans-serif;"> +95 9772284019 </h6>
+                    <hr class="w-50 mx-auto">
+                    <h5 class="text-center mt-5">Location</h5>
+                    <h6 class="text-center" style="font-style: italic; font-family:sans-serif;">Yesagyo Town,Magway</h6>
+                    <hr class="w-50 mx-auto">
+                    <h5 class="text-center mt-5">Email</h5>
+                    <h6 class="text-center" style="font-style: italic; font-family:sans-serif;"> ngakhant464f@gmail.com </h6>
+                    <hr class="w-50 mx-auto">
+                    <h5 class="text-center mt-5">Website</h5>
+                    <h6 class="text-center" style="font-style: italic; font-family:sans-serif;"> <a href="{% url 'home' %}">www.ngakhant.com</a></h6>
+                    
+                  </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6">
+                <div class="card shadow m-2 mb-4 p-2">
+                  
+                  <div class="card-body">
+                    <h3 class="card-title mb-2">Send Me An Email</h3>
+                    <form action="" class="form mt-4">
+                        <div class="mb-3 form-floating">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input required type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <textarea required class="form-control" name="text_area" id="text_area" placeholder="Message" style="height: 140px;"></textarea>
+                            <label for="text_area">Message</label>
+                        </div>
+                        <div class="text-center my-2">
+                            <input type="submit" value="Send Message" class="btn btn-outline-primary w-75">
+                        </div>
+                    </form>
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
+
+{% endblock content %}
+
+    

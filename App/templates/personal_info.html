@@ -1,0 +1,122 @@
+{% extends 'main.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} About | Nga Khant {% endblock title %} </title>
+</head>
+<body>
+
+    <div class="container p-2">
+        <div class="row g-2">
+            <div class="col-12 col-md-6">
+                <div class="card w-100 mx-auto m-2 mx-3 p-2 shadow">
+                  <div class="card-body">
+                    <h3 class="card-title mb-3">Personal Informations</h3>
+                    <div class="my-3"><b style="font-size: 16px; font-family:sans-serif;">Birthday </b>&nbsp;  :: <i>19 June 2005</i></div>
+                    <div class="my-3"><b style="font-size: 16px; font-family:sans-serif;">Email &nbsp; &nbsp; </b>    &nbsp;   :: <i>ngakhant464f@gmail.com</i></div>
+                    <div class="my-3"><b style="font-size: 16px; font-family:sans-serif;">Phone</b> &nbsp; &nbsp; &nbsp; :: <i>+95 9772284019</i></div>
+                    <div class="my-3">
+                        <b style="font-size: 16px; font-family:sans-serif;">Website</b>
+                         &nbsp;&nbsp;&nbsp; :: <a href="{% url 'home' %}">www.ngakhant.com</a></div>
+                    <div class="my-3">
+                        <b style="font-size: 16px; font-family:sans-serif;">Gender</b> &nbsp;&nbsp;&nbsp;  :: <i>Male</i></div>
+                    <div class="my-3">
+                        <b style="font-size: 16px; font-family:sans-serif;">City</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :: <i>Yesagyo, Magway, Myanmar</i></div>
+                    <div class="my-3">
+                        <b style="font-size: 16px; font-family:sans-serif;">Degree</b> &nbsp;&nbsp;&nbsp;  :: <i>Computer Science (CS)</i></div>
+                    <div class="my-3">
+                        <b style="font-size: 16px; font-family:sans-serif;">Freelance</b> :: <i>Available</i></div>
+
+                    <a href="#" class="btn btn-primary">Hire me</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="card w-100 mx-auto m-2 shadow" >
+                  
+                  <div class="card-body">
+                    <h3 class="card-title m-2 mb-3">Skills Informations</h3>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="html" class="w-50 ">HTML</label> 
+                                <span><i>80%</i></span><br>
+                                <input style="width: 150px; height:6px;" type="range" name="html" id="html" value="80">
+                            </div>
+                            <div class="mb-3">
+                                <label for="html" class="w-50 ">CSS</label> 
+                                <span><i>50%</i></span><br>
+                                <input style="width: 150px; height:6px;" type="range" name="html" id="html" value="50">
+                            </div>
+                            <div class="mb-3">
+                                <label for="html" class="w-50 ">Bootrap</label> 
+                                <span><i>85%</i></span><br>
+                                <input style="width: 150px; height:6px;" type="range" name="html" id="html" value="85">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="html" class="w-50 ">Python</label> 
+                                <span><i>90%</i></span><br>
+                                <input style="width: 150px; height:6px;" type="range" name="html" id="html" value="90">
+                            </div>
+                            <div class="mb-3">
+                                <label for="html" class="w-50 ">Django</label> 
+                                <span><i>60%</i></span><br>
+                                <input style="width: 150px; height:6px;" type="range" name="html" id="html" value="60">
+                            </div>
+                            <div class="mb-3">
+                                <label for="html" class="w-50 ">JavaScript</label> 
+                                <span><i>40%</i></span><br>
+                                <input style="width: 150px; height:6px;" type="range" name="html" id="html" value="40">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-2 mb-3 d-relative">
+            <div class="col-12 col-md-6">
+                <div class="card  m-2 shadow p-3">
+                  
+                    <h3 class="card-title mb-3">Education</h3>
+                    <div>
+                        <h6>Bachelor In Computer Science</h6>
+                        <p class="p-1">
+                            I'm a web developer with extensive experience <b>for 2 years</b> . My expertise is to create and website design, fullstack developer, and any more ...... <br>
+                            I'm a web developer with extensive experience <b>for 2 years</b> . My expertise is to create and website design, fullstack developer, and any more ......
+                            </p>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="card p-2 m-2 shadow" >
+                  
+                  <div class="card-body">
+                    <h3 class="card-title">Experience</h3>
+                    <h6>Website Developer (Django) </h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. <br>
+                        I'm a web developer with extensive experience <b>for 2 years</b> . My expertise is to create and website design, fullstack developer, and any more ......</p>
+                    <a href="#" class="btn btn-primary">Hello</a>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
+{% endblock content %}

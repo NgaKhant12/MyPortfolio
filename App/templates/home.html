@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% block content %}
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>{% block title %} Home {% endblock title %} </title>
+    
+</head>
+<body>
+
+    
+
+    <div class="container" >
+      <div class="row mt-3 g-2">
+        <div class="col-12 col-md-4 text-center text-md-end  p-2">
+          <a href="{% static '/images/ငခန့်.jpg' %}"><img src="{% static '/images/ငခန့်.jpg' %}" class="rounded-pill me-md-auto m-3 p-1 border border-primary border-3 mx-auto mt-1 shadow-lg" style="width: 200px; height:200px;"   alt=""></a>
+        
+        </div>
+        <div class="col-12 col-md-8 text-center text-md-start p-3">
+
+          <h1 style="font-family: 'Times New Roman', Times, serif; color:rgb(34, 0, 255); margin:0;" class="fw-bold text-md-left mb-3 " >Nga Khant</h1>
+        
+          <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(231, 9, 46); margin-left:0;" class="mb-3">I'm a Web Developer.</h2>
+
+          <p class=" fs-5" style="color: black;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          I'm a web developer with extensive experience for 2 years. My expertise is to create and website design, fullstack developer, and any more ...... <br>
+          I'm a web developer with extensive experience for 2 years. My expertise is to create and website design, fullstack developer, and any more ......
+          </p>
+          <div class="d-flex d-column">
+            <a href="#" class="btn btn-outline-primary p-2 mx-2 w-50">Download CV</a>
+            <a href="#" class="btn btn-outline-primary p-2 ">LinkIn</a>
+            <a href="#" class="btn btn-outline-primary p-2 mx-2">Git</a>
+            <a href="#" class="btn btn-outline-primary p-2 ">Facebook</a>
+
+
+          </div> 
+        </div>
+      </div>
+    </div>
+    
+    
+    
+</body>
+</html>
+{% endblock content %}
+

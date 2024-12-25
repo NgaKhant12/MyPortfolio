@@ -1,0 +1,71 @@
+{% extends 'main.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Projects | Nga Khant {% endblock title %} </title>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class=" text-center mt-4 mb-4">
+            My Latest Projects  
+        </h2>
+        <div class="row g-2 m-2">
+            <div class="col-12 col-md-6">
+                <div class="card m-2 shadow rounded-4" >
+                    <img src="{% static '/images/Screenshot (32).png' %}" class="card-img-top p-2 rounded-4" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Photos Album</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class=" text-center "><a href="#" class="btn btn-outline-primary w-75">Visit</a></div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="card m-2 shadow rounded-4" >
+                    <img src="{% static '/images/Screenshot (33).png' %}" class="card-img-top p-2 rounded-4" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Online Shop</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class=" text-center "><a href="#" class="btn btn-outline-primary w-75">Visit</a></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card m-2 shadow rounded-4" >
+                    <img src="{% static '/images/Screenshot (33).png' %}" class="card-img-top p-2 rounded-4" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Online Shop</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class=" text-center "><a href="#" class="btn btn-outline-primary w-75">Visit</a></div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="card m-2 shadow rounded-4" >
+                    <img src="{% static '/images/Screenshot (32).png' %}" class="card-img-top p-2 rounded-4" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Photos Album</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class=" text-center "><a href="#" class="btn btn-outline-primary w-75">Visit</a></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+
+
+{% endblock content %}
+
+    

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %} </title>
+    <link rel="stylesheet" href="{% static '/bootstrap-5.3.3-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style1.css' %}">
+
+    <style>
+      .activee{
+        color:rgb(255, 55, 55);
+        font-weight: 600;
+        
+      }
+      .nav-link:hover{
+        transition: 0.4s ease-in-out;
+        color: rgb(255, 55, 55);
+        font-weight: 600;
+      }
+      
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="{% static '/images/ငခန့်.jpg' %}">
+            <img src="{% static '/images/ငခန့်.jpg' %}" class="rounded-pill" style="height: 60px; width:60px;" alt="">
+        </a> -->
+        <a class="navbar-brand" href="{% url 'home' %}"><h4>Portfolio</h4></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
+            <li class="nav-item mx-2">
+              <a class="nav-link {% if request.path == '/' %}activee{% endif %}" href="/">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link {% if request.path == '/' %}activee{% endif %}" href="/service/">Service</a>
+            </li>
+    
+            <li class="nav-item mx-2 ">
+              <a class="nav-link {% if request.path == '/info/' %}activee{% endif %}" href="/info/">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link {% if request.path == '/projects/' %}activee{% endif %}" href="/projects/">Projects</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link {% if request.path == '/contact/' %}activee{% endif %}" href="/contact/">Contact</a>
+            </li>
+            <li class="nav-item mx-2">
+              <button class="nav-link dark_mode" onclick="dark()">Dark Mode</button>
+              <button class="nav-link ligth_mode d-none" onclick="light()">Light Mode</button>
+          </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+
+    {% block content %}
+    
+    {% endblock content %}
+    
+  
+  
+  
+
+
+    
+    <script type="text/javascript">
+      
+       function dark(){
+        document.querySelector("body").classList.add("bg-dark");
+       document.querySelector("body").classList.remove("bg-light");
+
+        document.querySelector("p").classList.add("text-white");
+        document.querySelector("p").classList.remove("text-dark");
+
+       document.querySelector("nav").classList.add("navbar-dark","bg-dark");
+       document.querySelector("nav").classList.remove("navbar-light","bg-light");
+
+       document.querySelector(".dark_mode").classList.add("d-none"); 
+       document.querySelector(".ligth_mode").classList.remove("d-none"); 
+       document.querySelector(".ligth_mode").classList.add("d-block");  
+      }
+
+      function light(){
+        document.querySelector("body").classList.add("bg-light");
+        document.querySelector("body").classList.remove("bg-dark");
+
+        document.querySelector("p").classList.add("text-dark");
+        document.querySelector("p").classList.remove("text-white");
+
+       document.querySelector("nav").classList.add("navbar-light","bg-light");
+       document.querySelector("nav").classList.remove("navbar-dark","bg-dark");
+
+       document.querySelector(".ligth_mode").classList.add("d-none"); 
+       document.querySelector(".dark_mode").classList.remove("d-none"); 
+       document.querySelector(".dark_mode").classList.add("d-block");  
+      }
+
+
+
+      
+    
+    </script>
+
+
+    
+    
+
+    <script src="{% static '/bootstrap-5.3.3-dist/js/bootstrap.min.js' %}" ></script>
+</body>
+</html>
+
