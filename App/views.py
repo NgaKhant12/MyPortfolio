@@ -20,3 +20,8 @@ def contact(request):
     context = {}
     
     return render(request,"contact.html",context)
+
+def service(request):
+    context = {}
+    
+    return render(request,"service.html",context)
