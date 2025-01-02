@@ -41,7 +41,8 @@
                   
                   <div class="card-body">
                     <h3 class="card-title mb-2">Send Me An Email</h3>
-                    <form action="" class="form mt-4">
+                    <form action="" class="form mt-4" method="post">
+                        {% csrf_token %}
                         <div class="mb-3 form-floating">
                             <input type="text" name="name" id="name" class="form-control" placeholder="Name">
                             <label for="name">Name</label>

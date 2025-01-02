@@ -1,4 +1,6 @@
 from django.urls import path
+from .views import send_email_view
+
 from . import views
 
 
@@ -8,5 +10,7 @@ urlpatterns = [
     path('projects/',views.projects,name='projects'),
     path('contact/',views.contact,name='contact'),
     path('service/',views.service,name='service'),
+    path('send-email/', send_email_view, name='send_email'),
+
 
 ]

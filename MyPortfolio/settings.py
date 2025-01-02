@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'App'
+    'App',
+
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,11 @@ import os
 
 # Add this line to your settings.py
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ngakhant464f@gmail.com'  # သင့် Gmail အကောင့်
+EMAIL_HOST_PASSWORD = 'tfks ahkf dajs hxoj'  # သင့် Gmail အကောင့် password
